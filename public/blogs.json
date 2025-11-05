@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "title": "What is useState and How Does It Work in React?",
+    "content": "useState is a React Hook that allows you to add state to functional components. It returns an array with two elements: the current state value and a function to update it. When the state updates, React re-renders the component to reflect the changes. It's commonly used to handle dynamic data such as form inputs, counters, or UI toggles.\n\nExample:\nconst [count, setCount] = useState(0);\nsetCount(count + 1);"
+  },
+  {
+    "id": 2,
+    "title": "What is the Purpose of useEffect in React?",
+    "content": "useEffect is a Hook used to perform side effects in functional components. Side effects include fetching data, updating the DOM, setting up subscriptions, or timers. It takes a function and a dependency array. The function runs after the component renders, and if the dependencies change, it runs again. You can also return a cleanup function to avoid memory leaks.\n\nExample:\nuseEffect(() => {\n  fetchData();\n}, [dependency]);"
+  },
+  {
+    "id": 3,
+    "title": "What is a Custom Hook in React and When Should You Use One?",
+    "content": "A custom hook is a reusable function in React that allows you to extract component logic into a separate function. Custom hooks always start with 'use' and can call other hooks inside them. They are useful for sharing logic like form handling, API calls, or authentication across multiple components without repeating code.\n\nExample:\nfunction useFetch(url) {\n  const [data, setData] = useState(null);\n  useEffect(() => {\n    fetch(url).then(res => res.json()).then(setData);\n  }, [url]);\n  return data;\n}"
+  },
+  {
+    "id": 4,
+    "title": "Difference Between Controlled and Uncontrolled Components in React",
+    "content": "Controlled components are form elements where React controls the value via state. Uncontrolled components rely on the DOM to handle their state, accessed via refs. Controlled components provide better control and validation, while uncontrolled components are easier for simple forms. Generally, controlled components are preferred in React because they allow consistent state management and predictable behavior.\n\nExample:\nControlled: <input value={state} onChange={e => setState(e.target.value)} />\nUncontrolled: <input ref={inputRef} />"
+  },
+  {
+    "id": 5,
+    "title": "Understanding useFormStatus() in React",
+    "content": "useFormStatus() is a hook provided by some form libraries (like Remix) to track the status of a form submission. It typically returns an object containing states like 'idle', 'submitting', or 'error', which can be used to provide feedback to the user. This helps in showing loading indicators, disabling buttons during submission, or handling errors gracefully.\n\nExample:\nconst formStatus = useFormStatus();\n<button disabled={formStatus.submitting}>Submit</button>"
+  }
+]

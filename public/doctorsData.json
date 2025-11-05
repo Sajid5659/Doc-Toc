@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.postimg.cc/SNBBcpGr/download-2.jpg",
+    "name": "Dr. Ayesha Rahman",
+    "education": "MBBS, FCPS (Medicine)",
+    "speciality": "Internal Medicine",
+    "experience": "10 years",
+    "registrationNumber": "BMDC-10567"
+  },
+  {
+    "id": 2,
+    "image": "https://i.postimg.cc/vmsdwdgs/download-1.jpg",
+    "name": "Dr. Rafiq Hossain",
+    "education": "MBBS, MS (Orthopedics)",
+    "speciality": "Orthopedic Surgeon",
+    "experience": "12 years",
+    "registrationNumber": "BMDC-11234"
+  },
+  {
+    "id": 3,
+    "image": "https://i.postimg.cc/bYMWjj4y/download-4.jpg",
+    "name": "Dr. Nusrat Karim",
+    "education": "MBBS, MD (Cardiology)",
+    "speciality": "Cardiologist",
+    "experience": "8 years",
+    "registrationNumber": "BMDC-11876"
+  },
+  {
+    "id": 4,
+    "image": "https://i.postimg.cc/0QX3jgQS/download-3.jpg",
+    "name": "Dr. Mahmudul Alam",
+    "education": "MBBS, FCPS (Surgery)",
+    "speciality": "General Surgeon",
+    "experience": "15 years",
+    "registrationNumber": "BMDC-10293"
+  },
+  {
+    "id": 5,
+    "image": "https://i.postimg.cc/sgPNSGx1/download-5.jpg",
+    "name": "Dr. Sara Haque",
+    "education": "MBBS, DGO",
+    "speciality": "Gynecologist & Obstetrician",
+    "experience": "9 years",
+    "registrationNumber": "BMDC-11654"
+  },
+  {
+    "id": 6,
+    "image": "https://i.postimg.cc/rmsnvhJx/download-6.jpg",
+    "name": "Dr. Tanvir Ahmed",
+    "education": "MBBS, MD (Neurology)",
+    "speciality": "Neurologist",
+    "experience": "11 years",
+    "registrationNumber": "BMDC-10742"
+  },
+  {
+    "id": 7,
+    "image": "https://i.postimg.cc/Bb1hvXR9/download-7.jpg",
+    "name": "Dr. Samia Rahman",
+    "education": "MBBS, FCPS (Dermatology)",
+    "speciality": "Dermatologist",
+    "experience": "7 years",
+    "registrationNumber": "BMDC-12109"
+  },
+  {
+    "id": 8,
+    "image": "https://i.postimg.cc/2jbmWTDL/download-8.jpg",
+    "name": "Dr. Jahid Hasan",
+    "education": "MBBS, MS (ENT)",
+    "speciality": "ENT Specialist",
+    "experience": "13 years",
+    "registrationNumber": "BMDC-10384"
+  },
+  {
+    "id": 9,
+    "image": "https://i.postimg.cc/sgcRzNpn/download-9.jpg",
+    "name": "Dr. Mehnaz Chowdhury",
+    "education": "MBBS, MS (Ophthalmology)",
+    "speciality": "Eye Specialist",
+    "experience": "10 years",
+    "registrationNumber": "BMDC-11563"
+  },
+  {
+    "id": 10,
+    "image": "https://i.postimg.cc/W3xBSLPQ/images.jpg",
+    "name": "Dr. Rezaul Karim",
+    "education": "MBBS, FCPS (Pediatrics)",
+    "speciality": "Child Specialist",
+    "experience": "14 years",
+    "registrationNumber": "BMDC-10123"
+  },
+  {
+    "id": 11,
+    "image": "https://i.postimg.cc/8k6Qc5RF/images-1.jpg",
+    "name": "Dr. Tamanna Islam",
+    "education": "MBBS, MD (Psychiatry)",
+    "speciality": "Psychiatrist",
+    "experience": "6 years",
+    "registrationNumber": "BMDC-12578"
+  },
+  {
+    "id": 12,
+    "image": "https://i.postimg.cc/VNVpLQ5G/images-2.jpg",
+    "name": "Dr. Arif Mahmud",
+    "education": "MBBS, MD (Urology)",
+    "speciality": "Urologist",
+    "experience": "9 years",
+    "registrationNumber": "BMDC-11195"
+  }
+]
