@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router';
-import { addToStoreDb } from '../../Utility/addtodb';
+import { addToStoreDb, getAppointedDoctors } from '../../Utility/addtodb';
+import { ToastContainer, toast } from 'react-toastify';
 
 const DoctorDetails = () => {
     const {id}=useParams();
@@ -9,8 +10,19 @@ const DoctorDetails = () => {
     const singleDoc = data.find(doctor => doctor.id==doctorId);
     console.log(singleDoc);
 
+    const [isBooked, setIsBooked]= useState(false);
+
+    useEffect(()=>{
+        const storedIds = getAppointedDoctors().map(id => parseInt(id)); 
+        if (storedIds.includes(doctorId)) {
+            setIsBooked(true);
+        }
+    },[])
+
     const handleAppointment =(id)=>{
         addToStoreDb(id);
+        setIsBooked(true);
+        toast.success("Appointment booked successfully!");
     }
 
     const {image,education,experience,name,registrationNumber,speciality,hospital,availability,consultationFee} = singleDoc;
@@ -45,7 +57,14 @@ const DoctorDetails = () => {
                 <h1 className='text-center text-2xl font-bold'>Book an Appointment</h1>
                 <div>
                     {/* <p>Availability</p> */}
-                    <button onClick={()=>handleAppointment(id)} className='btn bg-blue-600 text-white w-full my-4 rounded-2xl'>Book Appointment</button>
+                    <button
+                    onClick={() => handleAppointment(id)}
+                    disabled={isBooked}
+                    className={`btn w-full my-4 rounded-2xl ${isBooked ? 'bg-gray-400 cursor-not-allowed text-white' : 'bg-blue-600 text-white'}`}
+                    >
+                    {isBooked ? "Already Booked": "Book Appointment"}
+                    </button>
+                    <ToastContainer />
                 </div>
             </div>
         </div>

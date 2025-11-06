@@ -6,7 +6,7 @@ const getAppointedDoctors =()=>{
     else{
         return [];
     }
-}
+};
 
 const addToStoreDb = (id)=>{
     const appointedDoctorData = getAppointedDoctors();
@@ -16,8 +16,14 @@ const addToStoreDb = (id)=>{
     else{
         appointedDoctorData.push(id);
         localStorage.setItem("doctorList", JSON.stringify(appointedDoctorData));
-        alert('Doctor appointment done');
     }
-}
+};
 
-export { addToStoreDb , getAppointedDoctors };
+const removeFromStoreDb = (id) => {
+  const appointedDoctorData = getAppointedDoctors();
+  const updatedList = appointedDoctorData.filter((doctorId) => doctorId !== id.toString());
+  localStorage.setItem("doctorList", JSON.stringify(updatedList));
+  console.log(updatedList)
+};
+
+export { addToStoreDb , getAppointedDoctors , removeFromStoreDb};

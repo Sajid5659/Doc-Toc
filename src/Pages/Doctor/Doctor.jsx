@@ -25,7 +25,7 @@ speciality,registrationNumber}=doctor;
                 <div className="card-actions border-t border-dashed">
                 </div>
                 <Link to={`/doctorDetails/${id}`}>
-                    <button className="btn bg-white text-blue-500 border border-blue-500 rounded-xl">view Details</button>
+                    <button className="btn bg-white text-blue-500 border border-blue-500 rounded-xl">View Details</button>
                 </Link>
             </div>
         </div>
