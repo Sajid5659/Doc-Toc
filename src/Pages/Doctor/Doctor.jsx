@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const Doctor = ({doctor}) => {
     // console.log(doctor)
-    const {image,name,education,experience,
+    const {id,image,name,education,experience,
 speciality,registrationNumber}=doctor;
     // console.log(education)
     return (
@@ -23,7 +24,9 @@ speciality,registrationNumber}=doctor;
                 <p className='text-gray-400'> Reg No : {registrationNumber}</p>
                 <div className="card-actions border-t border-dashed">
                 </div>
-                <button className="btn bg-white text-blue-500 border border-blue-500 rounded-xl">view Details</button>
+                <Link to={`/doctorDetails/${id}`}>
+                    <button className="btn bg-white text-blue-500 border border-blue-500 rounded-xl">view Details</button>
+                </Link>
             </div>
         </div>
     );

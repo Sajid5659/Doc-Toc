@@ -5,7 +5,7 @@ import { FaFacebook, FaGithub, FaInstagram } from "react-icons/fa";
 const Footer = () => {
   const links = [
     { name: "Home", to: "/" },
-    { name: "My Bookings", to: "/bookings" },
+    { name: "My Bookings", to: "/myBookings" },
     { name: "Blogs", to: "/blogs" },
     { name: "Contact", to: "/contact" },
   ];

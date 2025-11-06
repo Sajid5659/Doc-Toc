@@ -4,6 +4,8 @@ import Root from '../Pages/Root/Root';
 import ErrorPage from '../Pages/ErrorPage/ErrorPage';
 import Home from '../Pages/Home/Home';
 import Blogs from '../Pages/Blogs/Blogs';
+import DoctorDetails from '../Pages/doctorDetails/doctorDetails';
+import MyBookings from '../Pages/MyBookings/MyBookings';
 
 export const router= createBrowserRouter([
   {
@@ -25,6 +27,16 @@ export const router= createBrowserRouter([
       {
         path:'/contact',
         Component:ErrorPage
+      },
+      {
+        path:'/doctorDetails/:id',
+        loader: ()=>fetch('doctorsData.json'),
+        Component:DoctorDetails
+      },
+      {
+        path:'/myBookings',
+        loader:()=>fetch('doctorsData.json'),
+        Component:MyBookings
       }
     ]
   },

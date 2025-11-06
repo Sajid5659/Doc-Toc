@@ -6,7 +6,10 @@
     "education": "MBBS, FCPS (Medicine)",
     "speciality": "Internal Medicine",
     "experience": "10 years",
-    "registrationNumber": "BMDC-10567"
+    "registrationNumber": "BMDC-10567",
+    "hospital": "United Hospital, Dhaka",
+    "availability": ["Sunday", "Tuesday", "Thursday", "Friday"],
+    "consultationFee": 800
   },
   {
     "id": 2,
@@ -15,7 +18,10 @@
     "education": "MBBS, MS (Orthopedics)",
     "speciality": "Orthopedic Surgeon",
     "experience": "12 years",
-    "registrationNumber": "BMDC-11234"
+    "registrationNumber": "BMDC-11234",
+    "hospital": "Square Hospitals Ltd.",
+    "availability": ["Monday", "Wednesday", "Friday"],
+    "consultationFee": 1000
   },
   {
     "id": 3,
@@ -24,7 +30,10 @@
     "education": "MBBS, MD (Cardiology)",
     "speciality": "Cardiologist",
     "experience": "8 years",
-    "registrationNumber": "BMDC-11876"
+    "registrationNumber": "BMDC-11876",
+    "hospital": "National Heart Foundation Hospital",
+    "availability": ["Sunday", "Monday", "Wednesday", "Thursday"],
+    "consultationFee": 1200
   },
   {
     "id": 4,
@@ -33,7 +42,10 @@
     "education": "MBBS, FCPS (Surgery)",
     "speciality": "General Surgeon",
     "experience": "15 years",
-    "registrationNumber": "BMDC-10293"
+    "registrationNumber": "BMDC-10293",
+    "hospital": "Bangabandhu Sheikh Mujib Medical University (BSMMU)",
+    "availability": ["Saturday", "Monday", "Wednesday"],
+    "consultationFee": 1100
   },
   {
     "id": 5,
@@ -42,7 +54,10 @@
     "education": "MBBS, DGO",
     "speciality": "Gynecologist & Obstetrician",
     "experience": "9 years",
-    "registrationNumber": "BMDC-11654"
+    "registrationNumber": "BMDC-11654",
+    "hospital": "Evercare Hospital Dhaka",
+    "availability": ["Sunday", "Tuesday", "Thursday"],
+    "consultationFee": 900
   },
   {
     "id": 6,
@@ -51,7 +66,10 @@
     "education": "MBBS, MD (Neurology)",
     "speciality": "Neurologist",
     "experience": "11 years",
-    "registrationNumber": "BMDC-10742"
+    "registrationNumber": "BMDC-10742",
+    "hospital": "Ibrahim Cardiac Hospital & Research Institute",
+    "availability": ["Monday", "Wednesday", "Friday", "Saturday"],
+    "consultationFee": 1300
   },
   {
     "id": 7,
@@ -60,7 +78,10 @@
     "education": "MBBS, FCPS (Dermatology)",
     "speciality": "Dermatologist",
     "experience": "7 years",
-    "registrationNumber": "BMDC-12109"
+    "registrationNumber": "BMDC-12109",
+    "hospital": "Popular Diagnostic Centre Ltd.",
+    "availability": ["Sunday", "Tuesday", "Thursday"],
+    "consultationFee": 700
   },
   {
     "id": 8,
@@ -69,7 +90,10 @@
     "education": "MBBS, MS (ENT)",
     "speciality": "ENT Specialist",
     "experience": "13 years",
-    "registrationNumber": "BMDC-10384"
+    "registrationNumber": "BMDC-10384",
+    "hospital": "Dhaka Medical College Hospital",
+    "availability": ["Monday", "Wednesday", "Saturday"],
+    "consultationFee": 950
   },
   {
     "id": 9,
@@ -78,7 +102,10 @@
     "education": "MBBS, MS (Ophthalmology)",
     "speciality": "Eye Specialist",
     "experience": "10 years",
-    "registrationNumber": "BMDC-11563"
+    "registrationNumber": "BMDC-11563",
+    "hospital": "Vision Eye Hospital",
+    "availability": ["Sunday", "Tuesday", "Thursday", "Friday"],
+    "consultationFee": 850
   },
   {
     "id": 10,
@@ -87,7 +114,10 @@
     "education": "MBBS, FCPS (Pediatrics)",
     "speciality": "Child Specialist",
     "experience": "14 years",
-    "registrationNumber": "BMDC-10123"
+    "registrationNumber": "BMDC-10123",
+    "hospital": "Shishu Hospital & Institute",
+    "availability": ["Saturday", "Monday", "Wednesday", "Friday"],
+    "consultationFee": 900
   },
   {
     "id": 11,
@@ -96,7 +126,10 @@
     "education": "MBBS, MD (Psychiatry)",
     "speciality": "Psychiatrist",
     "experience": "6 years",
-    "registrationNumber": "BMDC-12578"
+    "registrationNumber": "BMDC-12578",
+    "hospital": "Bangladesh Specialized Hospital",
+    "availability": ["Sunday", "Tuesday", "Thursday"],
+    "consultationFee": 800
   },
   {
     "id": 12,
@@ -105,6 +138,9 @@
     "education": "MBBS, MD (Urology)",
     "speciality": "Urologist",
     "experience": "9 years",
-    "registrationNumber": "BMDC-11195"
+    "registrationNumber": "BMDC-11195",
+    "hospital": "Labaid Specialized Hospital",
+    "availability": ["Monday", "Wednesday", "Friday", "Saturday"],
+    "consultationFee": 1000
   }
 ]

@@ -5,7 +5,7 @@ import logo from '../../../src/assets/logo.png';
 const Navbar = () => {
   const links = [
     { name: "Home", to: "/" },
-    { name: "My Bookings", to: "/bookings" },
+    { name: "My Bookings", to: "/myBookings" },
     { name: "Blogs", to: "/blogs" },
     { name: "Contacts", to: "/contact" },
   ];
