@@ -4,8 +4,9 @@ import Root from '../Pages/Root/Root';
 import ErrorPage from '../Pages/ErrorPage/ErrorPage';
 import Home from '../Pages/Home/Home';
 import Blogs from '../Pages/Blogs/Blogs';
-import DoctorDetails from '../Pages/doctorDetails/doctorDetails';
+
 import MyBookings from '../Pages/MyBookings/MyBookings';
+import DoctorDetails from '../Pages/DoctorDetails/DoctorDetails';
 
 export const router= createBrowserRouter([
   {
