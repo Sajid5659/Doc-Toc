@@ -4,7 +4,7 @@ import Footer from '../../Components/Footer/Footer';
 import Navbar from '../../Components/Header/Navbar';
 
 const Root = () => {
-    const location = useLocation();
+    // const location = useLocation();
     const [loading, setLoading ] = useState(true);
 
     useEffect(() => {
@@ -15,7 +15,7 @@ const Root = () => {
     }, 500); // 0.5s spinner
 
     return () => clearTimeout(timer);
-  }, [location.pathname]);
+  }, []);
     return (
         <div className='bg-gray-200'>
             <Navbar></Navbar>
@@ -26,7 +26,8 @@ const Root = () => {
             ) : (
                 <Outlet />
             )}
-            {location.pathname === "/" && <Footer />}
+            {/* {location.pathname === "/" && <Footer />} */}
+            <Footer></Footer>
         </div>
     );
 };

@@ -11,9 +11,9 @@ const Footer = () => {
   ];
 
   // Function to handle active link styling
-  const getLinkClass = (isActive) =>{
+  const getLinkClass = (isActive) =>
       isActive? "text-blue-500 underline": "text-gray-800 hover:text-blue-500";
-  }
+  
 
   return (
     <footer className="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-10">
