@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router';
 import { addToStoreDb, getAppointedDoctors } from '../../Utility/addtodb';
 import { ToastContainer, toast } from 'react-toastify';
+import { Helmet } from 'react-helmet-async';
 
 const DoctorDetails = () => {
     const {id}=useParams();
@@ -28,6 +29,9 @@ const DoctorDetails = () => {
     const {image,education,experience,name,registrationNumber,speciality,hospital,availability,consultationFee} = singleDoc;
     return (
         <div className='bg-gray-200 min-h-screen'>
+            <Helmet>
+                <title>Doc Toc | Doctor - {name} Details</title>
+            </Helmet>
             <div className='text-center rounded-2xl shadow-xl p-6 m-8 bg-white '>
                 <h1 className='text-3xl font-bold mb-5'>Doctor's profile Details</h1>
                 <p className='text-sm text-gray-500'>Our experienced doctors are here to provide trusted care and expert guidance for your health.</p>

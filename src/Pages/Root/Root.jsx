@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Outlet, useLocation } from 'react-router';
+import { Outlet } from 'react-router';
 import Footer from '../../Components/Footer/Footer';
 import Navbar from '../../Components/Header/Navbar';
 

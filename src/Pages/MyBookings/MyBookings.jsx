@@ -3,6 +3,7 @@ import { useLoaderData } from 'react-router';
 import { getAppointedDoctors, removeFromStoreDb } from '../../Utility/addtodb';
 import { ToastContainer, toast } from 'react-toastify';
 import { BarChart,Bar, XAxis, YAxis,CartesianGrid,Tooltip,ResponsiveContainer,Cell} from 'recharts';
+import { Helmet } from 'react-helmet-async';
 
 const TriangleBar = (props) => {
   const { fill, x, y, width, height } = props;
@@ -39,6 +40,9 @@ const MyBookings = () => {
 
   return (
     <div className="max-w-7xl mx-auto p-6">
+      <Helmet>
+        <title>Doc Toc | My Bookings</title>
+      </Helmet>
       <h1 className="text-3xl font-bold text-center m-8">My Today Appointments</h1>
       <p className="m-8 text-center text-gray-600">
         Our platform connects you with verified, experienced doctors across various

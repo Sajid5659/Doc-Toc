@@ -11,33 +11,33 @@ import DoctorDetails from '../Pages/DoctorDetails/DoctorDetails';
 export const router= createBrowserRouter([
   {
     path: "/",
-    Component: Root,
-    errorElement: <ErrorPage></ErrorPage>,
+    element: <Root />,
+    errorElement: <ErrorPage />,
     children : [
       {
         index: true,
         loader: ()=>fetch('doctorsData.json'),
         path:'/',
-        Component:Home
+        element:<Home/>
       },
       {
         path:'/blogs',
         loader:()=>fetch('blogs.json'),
-        Component:Blogs
+        element:<Blogs/>
       },
       {
         path:'/contact',
-        Component:ErrorPage
+        element:<ErrorPage/>
       },
       {
         path:'/doctorDetails/:id',
         loader: ()=>fetch('doctorsData.json'),
-        Component:DoctorDetails
+        element:<DoctorDetails/>
       },
       {
         path:'/myBookings',
         loader:()=>fetch('doctorsData.json'),
-        Component:MyBookings
+        element:<MyBookings/>
       }
     ]
   },
